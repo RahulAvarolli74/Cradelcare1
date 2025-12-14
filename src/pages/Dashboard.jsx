@@ -38,6 +38,7 @@ const Dashboard = () => {
       if (!response.ok) throw new Error('Network response was not ok');
 
       const data = await response.json();
+      console.log("Blynk Data:", data);
 
       setSensors({
         temperature: data.v1 || 0,
