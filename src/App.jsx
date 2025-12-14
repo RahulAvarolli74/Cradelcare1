@@ -19,10 +19,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<Features />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />\
+          <Route path="/contact" element={<Contact />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-        <footer style={{textAlign: 'center', padding: '20px', background: '#0f2f2e', color: '#bbb'}}>
+        <footer style={{ textAlign: 'center', padding: '20px', background: '#0f2f2e', color: '#bbb' }}>
           © 2025 CradleCare. All Rights Reserved.
         </footer>
       </div>
