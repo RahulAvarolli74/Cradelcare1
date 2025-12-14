@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+:root {
+  --teal: #11eeea;
+  --dark-teal: #0bb6b6;
+  --dark: #0a3d3b;
+  --light: #f7fbff;
+  --text-grey: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: #222;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--dark);
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- SHARED ANIMATION CLASSES --- */
+.reveal, .slide-left, .slide-right, .slide-up {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active, .slide-left.active, .slide-right.active, .slide-up.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Initial States */
+.slide-left { transform: translateX(-80px); }
+.slide-right { transform: translateX(80px); }
+.slide-up { transform: translateY(60px); }
+.reveal { transform: translateY(30px); }
+
+/* --- BUTTONS --- */
+.btn-primary {
+  background: var(--dark-teal);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #099494;
+  transform: translateY(-2px);
+}
